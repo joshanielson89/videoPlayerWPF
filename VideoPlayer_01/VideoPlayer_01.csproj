@@ -106,15 +106,6 @@
     <Resource Include="microphone.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="ducks.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="plat.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="plat3.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="dia3.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
