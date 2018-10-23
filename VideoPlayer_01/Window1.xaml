@@ -1,0 +1,63 @@
+﻿<Window x:Class="VideoPlayer_01.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VideoPlayer_01"
+        mc:Ignorable="d" Icon="dia3.ico"
+        Title="Filters" Height="600" Width="413">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Row="0" >
+            <StackPanel Orientation="Horizontal">
+                <Button Name="btnAddNewTime" Margin="5,5" Padding="5" Width="100" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnAddNewTime_Click"> Add Times </Button>
+                <Button Margin="5,5" Padding="5" Width="75" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnEditItems_Click"> Edit </Button>
+            </StackPanel>
+            <ListView Grid.Row="1" Name="fTimes" >
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn DisplayMemberBinding="{Binding Start}" Header="Start Time" Width="150"></GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding End}" Header="End Time" Width="150"></GridViewColumn>
+                        <GridViewColumn DisplayMemberBinding="{Binding Reason}" Header="Type" Width="100"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </StackPanel>
+        
+        
+        <!--This block needs to be last - This is the input box block --> 
+        <Grid x:Name="InputBox" Visibility="Collapsed">
+            <Grid Background="Black" Opacity="0.5"/>
+            <Border
+            MinWidth="250"
+            Background="DarkRed" 
+            BorderBrush="Black" 
+            BorderThickness="1" 
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center">
+                <StackPanel>
+                    <Label HorizontalAlignment="Center">Format: HH:MM:SS </Label>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="5" Text="Start Time:" FontWeight="Bold" FontFamily="Cambria" />
+                        <TextBox MinWidth="150" HorizontalAlignment="Center" VerticalAlignment="Center" Name="InputTextBox"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Margin="5,5,10,5" Text="End Time:" FontWeight="Bold" FontFamily="Cambria" />
+                        <TextBox  MinWidth="150" HorizontalAlignment="Center" VerticalAlignment="Center" Name="InputTextBox2"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Name="btnAddTime" Margin="5" Content="Add" Background="{x:Null}" Click="btnAddTime_Click"/>
+                        <Button Name="btnCancel" Margin="5" Content="Cancel" Background="{x:Null}" Click="btnCancel_Click" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
