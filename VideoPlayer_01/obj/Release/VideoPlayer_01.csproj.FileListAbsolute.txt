@@ -60,3 +60,6 @@ C:\Users\jnielson\Desktop\VideoPlayer_01\VideoPlayer_01\obj\Release\VideoPlayer_
 C:\Users\jnielson\Desktop\VideoPlayer_01\VideoPlayer_01\obj\Release\VideoPlayer_01.csproj.CoreCompileInputs.cache
 C:\Users\jnielson\Desktop\VideoPlayer_01\VideoPlayer_01\obj\Release\VideoPlayer_01.exe
 C:\Users\jnielson\Desktop\VideoPlayer_01\VideoPlayer_01\obj\Release\VideoPlayer_01.pdb
+C:\Users\josha\OneDrive\Desktop\cs3500\C#_Projects\VideoPlayer_01\VideoPlayer_01\obj\Release\Window1.g.cs
+C:\Users\josha\OneDrive\Desktop\cs3500\C#_Projects\VideoPlayer_01\VideoPlayer_01\obj\Release\VideoPlayer_01_MarkupCompile.lref
+C:\Users\josha\OneDrive\Desktop\cs3500\C#_Projects\VideoPlayer_01\VideoPlayer_01\obj\Release\Window1.baml
